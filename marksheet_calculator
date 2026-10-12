@@ -1,1 +1,43 @@
-
+#include<stdio.h>
+int main(){
+	char name[50];
+	float math,physics,chemistry,total;
+	float percentage;
+	printf("enter the name of student :");
+	scanf("%49[^\n]",name);
+	printf("physics mark:");
+	scanf("%f",&physics);
+	if(physics<0 || physics>100){
+		printf("invalid mark!,enter mark 0 to 100\n");
+		return 1;
+	}
+	printf("math mark:");
+	scanf("%f",&math);
+	if(math<0 || math>100){
+		printf("invalid mark!,enter mark 0 to 100\n");
+		return 1;
+	}
+	printf("chemistry mark :");
+	scanf("%f",&chemistry);
+	if(chemistry<0 || chemistry>100){
+		printf("invalid mark!,enter mark 0 to 100\n");
+		return 1;}
+	total = math + chemistry + physics;
+    percentage =(total/300)*100;
+	printf("total mark :%.2f\n",total);
+    printf("percentage :%.2f\n",percentage);
+	if(percentage>=90){
+		printf("grade:A\n");
+	}
+	else if(percentage>=80){
+	 printf("grade :B\n");
+	}
+	else if(percentage>=70){printf("grade: C\n");
+	}
+	else if(percentage>=60){
+		printf("grade :D\n");
+	}
+	else{printf("grade: fail\n");
+	}
+	return 0;
+}

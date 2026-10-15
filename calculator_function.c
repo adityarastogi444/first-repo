@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 #include<stdio.h>
 int sum(int a,int b)
 {
@@ -63,4 +61,4 @@ return 0;
 
 
 }
->>>>>>> cf18d86 (Add function-based smart calculator)
+
